@@ -1,0 +1,95 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: whitesmoke;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 7px 0px 0px rgba(220, 218, 217, 0.79);
+    border: 2px solid rgb(216, 209, 209);
+    animation-name: shadowTransformer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+span {
+    font-weight: 550;
+    font-size: 35px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.sorr {
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 0px 6px 0px 0px rgb(8, 106, 203);
+    transition: 0.1s ease-in-out all;
+}
+
+button:hover {
+    box-shadow: 0px 4px 0px 0px rgb(8, 106, 203);
+    transform: translateY(3px);
+}
+
+button:active {
+    box-shadow: 0px 4px 0px 0px rgb(8, 106, 203);
+    background-color: rgb(76, 165, 253);
+}
+
+.popup {
+    border: 2px solid rgb(216, 209, 209);
+    box-shadow: 0px 20px 40px 0px rgba(201, 199, 198, 0.79);
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.521);
+    backdrop-filter: blur(20px);
+    font-size: 14px;
+    padding: 2px 7px;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out all;
+}
+
+@keyframes shadowTransformer {
+    0% {
+        box-shadow: 0px 10px 0px 0px rgba(201, 199, 198, 0.79);
+    }
+
+    25% {
+        box-shadow: 10px 0px 0px 0px rgba(201, 199, 198, 0.79);
+    }
+
+    50% {
+        box-shadow: 0px -10px 0px 0px rgba(201, 199, 198, 0.79);
+    }
+
+    75% {
+        box-shadow: -10px 0px 0px 0px rgba(201, 199, 198, 0.79);
+    }
+
+    100% {
+        box-shadow: 0px 10px 0px 0px rgba(201, 199, 198, 0.79);
+    }
+}

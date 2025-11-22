@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guess Name or Age</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <span>Guess</span>
+            <span style="color: dodgerblue;">Game</span>
+        </div>
+
+        <div>
+            <h3>Welcome, Guest</h3>
+            <p class="sorr">Sorry, we don't know your name. <br> Click on the button to discover your name or age!</p>
+        </div>
+        <button onclick="guessPersoalInfo(event)">Click Me</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <p class="name-age" id="name-age"></p>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
